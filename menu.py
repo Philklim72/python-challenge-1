@@ -152,13 +152,14 @@ while place_order:
             order_quantity = input(f"How Many {item_name}s would you like?") 
 
                  
-
                     # Check if the quantity is a number, default to 1 if not
             if order_quantity.isdigit() :
+                order_quantity=int(order_quantity)
                 pass
             else: 
-                order_quantity =1
                 print("An invalid selection will result in order quantity defaulting to 1")
+                order_quantity =1
+                
 
                     # Add the item name, price, and quantity to the order list
             item_price=menu_items[menu_selection]["Price"]
