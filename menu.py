@@ -149,10 +149,9 @@ while place_order:
                 print("Invalid Selection")
  # Ask the customer for the quantity of the menu item
 
-            order_quantity = input("How Many would you like?") 
+            order_quantity = input(f"How Many {item_name}s would you like?") 
 
                  
-
 
                     # Check if the quantity is a number, default to 1 if not
             if order_quantity.isdigit() :
@@ -260,4 +259,4 @@ for order in customers_order:
 
 # and print the prices.
 total_cost = sum(item["cost"] for item in customers_order if "cost" in item)
-print("Total Cost",total_cost)
+print("Total Cost $",total_cost)
