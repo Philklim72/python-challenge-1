@@ -145,6 +145,7 @@ while place_order:
             if int(menu_selection) in menu_items.keys(): 
                 item_name =menu_items[menu_selection]["Item name"]
                 print("You've Selected: ",item_name)
+            # Tell the customer that their input isn't valid
             else:
                 print("Invalid Selection")
  # Ask the customer for the quantity of the menu item
@@ -168,11 +169,10 @@ while place_order:
                                     "Quantity": int(order_quantity)
                                     })
 
-                    # Tell the customer that their input isn't valid
+                    
            
 
-                # Tell the customer they didn't select a menu option
-
+              
         else:
             # Tell the customer they didn't select a menu option
             print(f"{menu_category} was not a menu option.")
@@ -200,7 +200,7 @@ while place_order:
 
         
                 # Keep ordering
-
+        
                 # Exit the keep ordering question loop
 
                 # Complete the order
